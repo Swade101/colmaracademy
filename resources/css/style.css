@@ -1,20 +1,32 @@
+::-webkit-scrollbar {
+    display: none;
+  }
+
+
+html, body {
+  font-size: 16px;
+  font-family: Helvetica;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: auto;
+}
+
+
+/*header*/
+
 header {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
+  position: absolute;
   height: 64px;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 10;
   background-color: white;
-}
-
-body {
-  width: 100%;
-  margin-left: 0;
+  overflow: hidden;
 }
 
 .logo {
@@ -28,9 +40,13 @@ height: 50px;
 margin-left: 24px;
 }
 
+.logo img:nth-child(1n+2) {
+  display: none;
+}
+
 .logo p {
   font-size: 24px;
-  font-weight: 900;
+  font-weight: bold;
 }
 
 .logo span {
@@ -38,7 +54,7 @@ margin-left: 24px;
 }
 
 .navigation {
-  margin-right: 8px;
+  margin-right: 1.5rem;
 }
 
 .navigation li{
@@ -53,11 +69,16 @@ margin-left: 24px;
 }
 
 .navigation a:hover {
+  transition: color 1s ease-in 0.5ms;
+}
+
+.navigation a:hover {
   color: blue;
 }
 
+/*maincontent*/
+
 .maincontent {
-  position: relative;
   margin-top: 64px;
   right: 0;
   left: 0;
@@ -65,55 +86,65 @@ margin-left: 24px;
   z-index: 5;
 }
 
+.bannertext .h1 {
+    display: block;
+    font-size: 3em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+/*Lean something new everyday section*/
+
 .banner {
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: lightgray;
+  background-color: #d8d8d8;
 }
 
 .bannerpic {
-  height: 550px;
   width: 60%;
-  left: 0;
-  background-image: url("../images/banner.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 32px 40px 32px 24px;
+  margin-right: 40px;
+  overflow: hidden;
 }
 
 .bannerpic img {
-  max-height: 100%;
-  max-width: 60%;
+  width: 100%;
+  margin: 32px 40px 32px 24px;
 }
 
 .bannertext {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   height: 440px;
   width: 423px;
-  margin-left: 40px;
-}
-
-.bannertext .idk {
-  width: 70%;
+  overflow: hidden;
 }
 
 .bannertext h1 {
-  font-size: 40px;
+  font-size: 45px;
 }
 
 .bannertext p {
   font-size: 25px;
 }
 
+.bannertext p {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
 .bannertext .button  {
   padding-top: 8px;
   padding-bottom: 8px;
   text-align: center;
-  background-color: darkgray;
+  width: 79%;
+  background-color: #484848;
 }
 
 .bannertext .button a {
@@ -121,47 +152,112 @@ margin-left: 24px;
   color: white;
 }
 
+.bannertext .button a:hover {
+  transition: color 1s ease-in 0.5ms;
+}
+
+.bannertext .button a:hover {
+  color: blue;
+}
+
+
+/*It doesn't hurt to keep practicing section*/
+
 .maininfo {
   display: flex;
   flex-direction: row;
   margin-top: 0;
+  background-color: #f0f0f0;
 }
 
 .main1 {
   display: flex;
   flex-direction: column;
-  width: 1000px;
-  margin: 32px 24px;
+  width: 100%;
+  margin-right: 24px;
+  margin-left: 24px;
+  margin-bottom: 32px;
 }
 
-.main1pic {
-  height: 550px;
-  width:100%;
+.main1 img {
+  height: 336px;
+  width: 100%;
   left: 0;
-  background-image: url("../images/information-main.jpg");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+  margin-top: 32px;
+}
 
+.main1 .h1 {
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+.main1 p {
+  font-size: 19px;
+}
+
+.main1 p{
+  margin-bottom: 30px;
 }
 
 .main2 {
   border-left: 1px solid lightgray;
 }
 
-.box {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: 423px;
-  margin-top: 32px;
-  margin-left: 16px;
+.main2 .box:last-child {
+  background-color: #d8d8d8;
 }
 
-.box img {
-  width: 35%;
+.box {
+  display: flex;
+  align-items: center;
+  height: 168px;
+  width: 450px;
+  margin: 16px;
 }
+
+.box img{
+    height: 136px;
+    width: 35%;
+    padding: 16px;
+}
+
+.box .h2 {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.box p:last-child {
+  margin-top: 1rem;
+}
+
+.box a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+/*
+.box, .box1 {
+  display: flex;
+  align-items: center;
+  height: 168px;
+  width: 423px;
+}
+
+.box img, .box1 img{
+    eight: 136px;
+    width: 35%;
+    margin: 16px;
+}
+*/
+
+/*Start learning section*/
 
 .course {
   display: flex;
@@ -179,35 +275,50 @@ margin-left: 24px;
   width: 100%;
 }
 
-.coursehead h1 {
-  margin-top: 32px;
-  margin-bottom: 32px;
+.coursehead .h1 {
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 .row {
-  display: flex;
-  flex-direction: column;
-  width: 25%;
+  width: 25.5%;
   background-color: white;
 }
 
 .row img {
-  height: 170px;
+  height: 125px;
+  width: 100%;
 }
 
-.row h2 {
-  margin-top: 16px;
-  margin-left:  16px;
+.row .h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    margin-top: 16px;
+    margin-left:  16px;
 }
 
 .row p {
-  margin-top: 8px;
+  padding-top: 8px;
   margin-left: 16px;
   margin-bottom: 24px;
 }
 
+
 .margin {
   margin-top: 20px;
+  margin-bottom: 32px;
 }
 
 .center {
@@ -215,28 +326,128 @@ margin-left: 24px;
   margin-left: 32px;
 }
 
+
+/*Thesis section*/
+
 .thesis {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
+  background-color: #f0f0f0;
 }
 
-.thesishead {
-  margin-top:32px;
+.thesisheader .h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 32px;
   margin-bottom: 32px;
 }
 
 .thesisinfo {
   display: flex;
   flex-direction: row;
+  width: 100%;
+  margin-top: 0;
 }
 
 .thesisbox {
   display: flex;
   flex-direction: column;
+  width: 60%;
+  margin-bottom: 32px;
+}
+
+.thesisbox .h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+.thesisbox1 {
+  display: flex;
+  flex-direction: column;
+  width: 51%;
+}
+
+.thesisbox1 .h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+.thesisbox:first-child {
+  margin-right: 16px;
+  margin-bottom: 24px;
+  margin-left: 24px;
 }
 
 .box2 {
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  height: 168px;
+  width: 423px;
 }
+
+.box2:first-child {
+  background-color: #d8d8d8;
+}
+
+.box2 img{
+    height: 136px;
+    width: 35%;
+    padding: 16px;
+}
+
+.boxy {
+  width: 100%;
+  margin-right: 0;
+}
+
+
+/*footer*/
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
+  width: 100%;
+  text-align: right;
+  border-top: 1px solid #d3d3d3;
+}
+
+footer p{
+  margin-top: 10px;
+}
+
+footer p:first-child {
+  margin-left: 24px;
+}
+
+footer p:last-child {
+  word-spacing: 10px;
+  margin-right: 1.75rem;
+}
+
+@media only screen and (max-width: 420px) {
+  .logo img:nth-child(1n+2) {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .logo p,
+  .navigation,
+  .bannerpic,
+  .main1,
+  .thesisbox p,
+  .thesisbox1 {
+    display: none;
+  }
