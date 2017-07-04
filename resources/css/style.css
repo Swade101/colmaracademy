@@ -441,7 +441,8 @@ footer p:last-child {
   }
 
   .logo img {
-  margin-right: 8rem;
+    height: 4rem;
+    margin-right: 7rem;
   }
 
   .logo img:nth-child(1n+2) {
