@@ -5,10 +5,11 @@
 
 html, body {
   font-size: 16px;
-  font-family: Helvetica;
+  font-family: Helvetica, sans-serif;
   max-width: 100%;
   overflow-x: hidden;
   margin: auto;
+  line-height: 1.2;
 }
 
 
@@ -97,6 +98,10 @@ margin-left: 24px;
 }
 
 /*Lean something new everyday section*/
+
+.spacer {
+  display: none;
+}
 
 .banner {
   width: 100%;
@@ -208,6 +213,10 @@ margin-left: 24px;
   border-left: 1px solid lightgray;
 }
 
+.main2 .box img:nth-child(0n+2) {
+  display: none;
+}
+
 .main2 .box:last-child {
   background-color: #d8d8d8;
 }
@@ -242,20 +251,6 @@ margin-left: 24px;
   text-decoration: none;
 }
 
-/*
-.box, .box1 {
-  display: flex;
-  align-items: center;
-  height: 168px;
-  width: 423px;
-}
-
-.box img, .box1 img{
-    eight: 136px;
-    width: 35%;
-    margin: 16px;
-}
-*/
 
 /*Start learning section*/
 
@@ -273,6 +268,10 @@ margin-left: 24px;
   align-content: center;
   justify-content: center;
   width: 100%;
+}
+
+.courseinfo-mobile {
+  display: none;
 }
 
 .coursehead .h1 {
@@ -418,14 +417,14 @@ margin-left: 24px;
 footer {
   display: flex;
   justify-content: space-between;
-  height: 90px;
+  height: 6rem;
   width: 100%;
   text-align: right;
   border-top: 1px solid #d3d3d3;
 }
 
 footer p{
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 
 footer p:first-child {
@@ -438,16 +437,131 @@ footer p:last-child {
 }
 
 @media only screen and (max-width: 420px) {
+  html {
+    font-size: 8px;
+  }
+  .logo img {
+  margin-right: 4rem;
+  }
+
   .logo img:nth-child(1n+2) {
     display: flex;
     justify-content: space-around;
+  }
+
+  .spacer {
+    display: flex;
+    height: 28rem;
+    background-color: #484848;
+  }
+
+  .bannertext {
+    margin-left: 2rem;
+  }
+
+  .bannertext .h1 {
+    font-size: 5.4rem;
+  }
+
+  .bannertext p {
+    margin-top: 0;
+  }
+
+  .bannertext p:nth-child(0n+2) {
+    font-size: 3.6rem;
+  }
+
+  .bannertext .button {
+    width: 96%;
+  }
+
+  .main2 .box {
+    flex-direction: column;
+    height: auto;
+    width: auto;
+  }
+
+  .main2 .box:last-child {
+    background-color: inherit;
+  }
+
+  .main2 .box img:nth-child(0n+2) {
+    display: flex;
+    width: 100%;
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+
+  .main2 .box .h2 {
+    font-size: 2.9rem;
+  }
+
+  .boxtext {
+    margin-left: 2rem;
+    width: 100%;
+  }
+
+  .course {
+    width: 100%;
+    background-color: #f0f0f0;
+  }
+
+  .coursehead .h1 {
+    font-size: 4rem;
+  }
+
+  .courseinfo-mobile {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    width: 100%;
+  }
+
+  .courseinfo-mobile p {
+    font-weight: bold;
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-bottom: 16px;
+    margin-right: 2rem;
+    margin-bottom: 8px;
+    margin-left: 2rem;
+    background-color: #d8d8d8;
+  }
+
+  .row .h2 {
+    display: flex;
+  }
+
+  .thesisheader .h1 {
+    font-size: 4rem;
+    margin-bottom: auto;
+  }
+
+  .thesisbox:first-child {
+    margin: 0 auto;
+    margin-bottom: 24px;
+    width: 100%;
+  }
+
+  footer {
+    align-items: center;
+  }
+
+  footer p {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
   .logo p,
   .navigation,
   .bannerpic,
   .main1,
+  .main2 .box img:nth-child(0n+1),
+  .row,
+  .thesisbox .h2,
   .thesisbox p,
-  .thesisbox1 {
+  .thesisbox1,
+  footer p:last-child {
     display: none;
   }
