@@ -21,7 +21,7 @@ header {
   align-items: center;
   justify-content: space-between;
   position: absolute;
-  height: 64px;
+  height: 4rem;
   width: 100%;
   top: 0;
   left: 0;
@@ -37,7 +37,7 @@ header {
 }
 
 .logo img{
-height: 50px;
+height: 3.125rem;
 margin-left: 24px;
 }
 
@@ -46,7 +46,7 @@ margin-left: 24px;
 }
 
 .logo p {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
@@ -60,8 +60,8 @@ margin-left: 24px;
 
 .navigation li{
   display: inline-block;
-  margin-right: 16px;
-  font-size: 20px;
+  margin-right: 1rem;
+  font-size: 1.25rem;
 }
 
 .navigation a {
@@ -80,24 +80,17 @@ margin-left: 24px;
 /*maincontent*/
 
 .maincontent {
-  margin-top: 64px;
+  margin-top: 4rem;
   right: 0;
   left: 0;
   width: 100%;
   z-index: 5;
 }
 
-.bannertext .h1 {
-    display: block;
-    font-size: 3em;
-    margin-top: 0.67em;
-    margin-bottom: 0.67em;
-    margin-left: 0;
-    margin-right: 0;
-    font-weight: bold;
-}
-
 /*Lean something new everyday section*/
+
+
+/*spacer only for mobile site*/
 
 .spacer {
   display: none;
@@ -113,42 +106,45 @@ margin-left: 24px;
 
 .bannerpic {
   width: 60%;
-  margin-right: 40px;
+  margin-right: 2.5rem;
   overflow: hidden;
 }
 
 .bannerpic img {
   width: 100%;
-  margin: 32px 40px 32px 24px;
+  margin: 2rem 2.5rem 2rem 1.5rem;
 }
 
 .bannertext {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 440px;
-  width: 423px;
+  height: 27.5rem;
+  width: 26.4375rem;
   overflow: hidden;
 }
 
-.bannertext h1 {
-  font-size: 45px;
+.bannertext .h1 {
+    display: block;
+    font-size: 3em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
 }
 
 .bannertext p {
-  font-size: 25px;
+  font-size: 1.5625rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
-.bannertext p {
-  margin-top: 24px;
-  margin-bottom: 24px;
-}
-
-.bannertext .button  {
-  padding-top: 8px;
-  padding-bottom: 8px;
+.bannertext .button {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 90%;
   text-align: center;
-  width: 79%;
   background-color: #484848;
 }
 
@@ -179,16 +175,16 @@ margin-left: 24px;
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-right: 24px;
-  margin-left: 24px;
-  margin-bottom: 32px;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .main1 img {
-  height: 336px;
+  height: 21rem;
   width: 100%;
   left: 0;
-  margin-top: 32px;
+  margin-top: 2rem;
 }
 
 .main1 .h1 {
@@ -202,11 +198,8 @@ margin-left: 24px;
 }
 
 .main1 p {
-  font-size: 19px;
-}
-
-.main1 p{
-  margin-bottom: 30px;
+  font-size: 1.1875rem;
+  margin-bottom: 1.875rem;
 }
 
 .main2 {
@@ -224,22 +217,22 @@ margin-left: 24px;
 .box {
   display: flex;
   align-items: center;
-  height: 168px;
-  width: 450px;
-  margin: 16px;
+  height: 10.5rem;
+  width: 28.125rem;
+  margin: 1rem;
 }
 
 .box img{
-    height: 136px;
+    height: 8.5rem;
     width: 35%;
-    padding: 16px;
+    padding: 1rem;
 }
 
 .box .h2 {
     display: block;
     font-size: 1.5rem;
     font-weight: bold;
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
 }
 
 .box p:last-child {
@@ -252,7 +245,7 @@ margin-left: 24px;
 }
 
 
-/*Start learning section*/
+/*Start learning courses section*/
 
 .course {
   display: flex;
@@ -282,8 +275,8 @@ margin-left: 24px;
     margin-left: 0;
     margin-right: 0;
     font-weight: bold;
-    margin-top: 32px;
-    margin-bottom: 32px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .row {
@@ -292,7 +285,7 @@ margin-left: 24px;
 }
 
 .row img {
-  height: 125px;
+  height: 7.8125rem;
   width: 100%;
 }
 
@@ -304,25 +297,25 @@ margin-left: 24px;
     margin-left: 0;
     margin-right: 0;
     font-weight: bold;
-    margin-top: 16px;
-    margin-left:  16px;
+    margin-top: 1rem;
+    margin-left:  1rem;
 }
 
 .row p {
-  padding-top: 8px;
-  margin-left: 16px;
-  margin-bottom: 24px;
+  padding-top: 0.5rem;
+  margin-left: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 
 .margin {
-  margin-top: 20px;
-  margin-bottom: 32px;
+  margin-top: 1.25rem;
+  margin-bottom: 2rem;
 }
 
 .center {
-  margin-right: 32px;
-  margin-left: 32px;
+  margin-right: 2rem;
+  margin-left: 2rem;
 }
 
 
@@ -339,8 +332,8 @@ margin-left: 24px;
 .thesisheader .h1 {
   font-size: 2rem;
   font-weight: bold;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .thesisinfo {
@@ -354,7 +347,7 @@ margin-left: 24px;
   display: flex;
   flex-direction: column;
   width: 60%;
-  margin-bottom: 32px;
+  margin-bottom: 2rem;
 }
 
 .thesisbox .h2 {
@@ -384,16 +377,16 @@ margin-left: 24px;
 }
 
 .thesisbox:first-child {
-  margin-right: 16px;
-  margin-bottom: 24px;
-  margin-left: 24px;
+  margin-right: 1rem;
+  margin-bottom: 1.5rem;
+  margin-left: 1.5rem;
 }
 
 .box2 {
   display: flex;
   align-items: center;
-  height: 168px;
-  width: 423px;
+  height: 10.5rem;
+  width: 26.4375rem;
 }
 
 .box2:first-child {
@@ -401,9 +394,9 @@ margin-left: 24px;
 }
 
 .box2 img{
-    height: 136px;
+    height: 8.5rem;
     width: 35%;
-    padding: 16px;
+    padding: 1rem;
 }
 
 .boxy {
@@ -428,20 +421,27 @@ footer p{
 }
 
 footer p:first-child {
-  margin-left: 24px;
+  margin-left: 1.5rem;
 }
 
 footer p:last-child {
-  word-spacing: 10px;
+  word-spacing: 0.625rem;
   margin-right: 1.75rem;
 }
+
+/*section for mobile site */
 
 @media only screen and (max-width: 420px) {
   html {
     font-size: 8px;
   }
+
+  header {
+    height: 8rem;
+  }
+
   .logo img {
-  margin-right: 4rem;
+  margin-right: 8rem;
   }
 
   .logo img:nth-child(1n+2) {
@@ -455,8 +455,16 @@ footer p:last-child {
     background-color: #484848;
   }
 
+  .maincontent {
+    margin-top: 8rem;
+  }
+
   .bannertext {
     margin-left: 2rem;
+    overflow: visible;
+    width: auto;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 
   .bannertext .h1 {
@@ -472,13 +480,25 @@ footer p:last-child {
   }
 
   .bannertext .button {
+    font-size: 3rem;
     width: 96%;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .maininfo {
+    padding-top: 8rem;
+    padding-bottom: 4rem;
   }
 
   .main2 .box {
     flex-direction: column;
     height: auto;
     width: auto;
+  }
+
+  .main2 .box img {
+    height: 18rem;
   }
 
   .main2 .box:last-child {
@@ -508,23 +528,24 @@ footer p:last-child {
 
   .coursehead .h1 {
     font-size: 4rem;
+    margin-top: 4rem;
   }
 
   .courseinfo-mobile {
     display: flex;
     flex-direction: column;
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     width: 100%;
   }
 
   .courseinfo-mobile p {
     font-weight: bold;
-    padding-top: 16px;
-    padding-left: 16px;
-    padding-bottom: 16px;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
     margin-right: 2rem;
-    margin-bottom: 8px;
+    margin-bottom: 1rem;
     margin-left: 2rem;
     background-color: #d8d8d8;
   }
@@ -540,7 +561,7 @@ footer p:last-child {
 
   .thesisbox:first-child {
     margin: 0 auto;
-    margin-bottom: 24px;
+    margin-bottom: 3rem;
     width: 100%;
   }
 
@@ -552,6 +573,8 @@ footer p:last-child {
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
+
+/*all the sections that are turned off for mobile site*/
 
   .logo p,
   .navigation,
@@ -565,3 +588,4 @@ footer p:last-child {
   footer p:last-child {
     display: none;
   }
+}
